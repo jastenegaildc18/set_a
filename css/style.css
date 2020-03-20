@@ -1,0 +1,232 @@
+
+@font-face {
+    font-family:"Potra";
+    src: url(../fonts/Potra.ttf)
+}
+
+@font-face {
+    font-family:"Manrope";
+    src: url(../fonts/manrope-light.otf)
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flexbox;
+}
+
+.carousel{
+    height: 108vh;
+}
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+.carousel-caption{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    display: flexbox;
+}
+
+.display-2{
+    font-size: 350%;
+    font-family: 'Manrope';
+    animation: animm 1.5s linear infinite;
+}
+@keyframes animm{
+    0%, 30%
+    {
+        text-shadow: 5px 0px 5px #00fa0c;
+   
+    }
+    50%, 100%
+    {
+        color: #fff;
+        text-shadow: 0 0 10px #fff,
+        0 0 20px#20af27,
+        0 0 500px #20af27,
+        0 0 100px #20af27;
+    }
+}
+
+.home-ninja{
+    width: 45rem;
+}
+#getstarted{
+    position: relative;
+    display: inline-block;
+    font-family: 'Manrope';
+    padding: 15px 30px;
+    color: #00fa0c;
+    background: #082209c7;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 1s;
+    border-radius: 3%;
+    box-shadow: 0 20px 50px rgba(0,0,0,.5);
+    overflow: hidden;
+}
+#getstarted:before{
+    content: '';
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    position: absolute;
+    background: rgba(255, 255,255, 0.05);
+}
+
+
+#getstarted:hover{
+    color: #ffffff;
+    background: #20af27;
+    box-shadow: 0 0 10px  #20af27, 0 0 40px  #20af27, 0 0 80px #20af27;
+}
+#getstarted span{
+    position: absolute;
+    display: block;
+}
+#getstarted span:nth-child(1)
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent,  #20af27);
+    animation: animate1 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate1
+{
+    0%
+    {
+        transform: translateX(-100%);
+    }
+    100%
+    {
+        transform: translateX(100%);
+    }
+}
+
+#getstarted:hover span:nth-child(1)
+{
+    left: 100%;
+    transition: 1s;
+}
+
+#getstarted span:nth-child(3)
+{
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, transparent, #20af27);
+    animation: animate3 2s linear infinite;
+}
+@keyframes animate3
+{
+    0%
+    {
+        transform: translateX(100%);
+    }
+    100%
+    {
+        transform: translateX(-100%);
+    }
+}
+
+#getstarted:hover span:nth-child(3)
+{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#getstarted span:nth-child(2)
+{
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #20af27);
+    animation: animate2 2s linear infinite;
+}
+@keyframes animate2
+{
+    0%
+    {
+        transform: translateY(-100%);
+    }
+    100%
+    {
+        transform: translateY(100%);
+    }
+}
+#getstarted:hover span:nth-child(2)
+{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+#getstarted span:nth-child(4)
+{
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #20af27);
+    animation: animate4 2s linear infinite;
+}
+@keyframes animate4
+{
+    0%
+    {
+        transform: translateY(100%);
+    }
+    100%
+    {
+        transform: translateY(-100%);
+    }
+}
+
+#getstarted:hover span:nth-child(4)
+{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+    
+}
+@media (max-width: 576px) {
+    
+}
+
+
+.carousel-item
+{
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    backface-visibility: visible;
+}
+
+figure{
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin: 0 !important;
+}
+.fixed-wrap{
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+}

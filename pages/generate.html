@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/generate.css">
+</head>
+<body>
+    <nav class="navbar sticky-top">
+        <a class="navbar-brand" href="#" ><img id="logo" src="../imgs/ninja.png"></a>
+    </nav>
+    <h2 class="motor-title img-fluid">Motorbike Color Changer</h2>
+    <div class="container">
+        <div class="model col-sm-4 col-sm-3 col-sm-6 col-sm-12 img-fluid">
+        <img class="motor img-fluid" id="motor" src="../imgs/motor.png">
+        </div>
+    
+    <div class="all-buttons col-sm-4 col-sm-3 col-sm-6 col-sm-12 img-fluid">  
+    <div class="color-box img-fluid">
+        <h3 class="label2">Generate Specific Color</h3>
+        <a onclick="changeSelected('blue')" id="blue">#0000ff</a>
+        <a onclick="changeSelected('grey')" id="grey">#808080</a>
+        <a onclick="changeSelected('green')" id="green">#20af27</a>
+        <a onclick="changeSelected('yellow')" id="yellow">#f1c40f</a>
+        <a onclick="changeSelected('lightblue')" id="lightblue">#add8e6</a>
+        <a onclick="changeSelected('black')" id="black">#000000</a>
+        <h3 class="or">--- or ---</h3>
+    </div>
+    
+    <div class="button-container img-fluid">
+    <div class="gen-random img-fluid">
+        <button type="button" onclick="changeColor()" class="generate-button  btn-lg img-fluid">Generate Random Color</button>
+    </div>
+    <div class="reset-button img-fluid">
+        <button class="button-reset  btn-lg img-fluid" type="button" onclick = "resetColor()">Reset</button>
+    </div>
+    </div>
+
+    </div>
+    </div> 
+<footer class="footer img-fluid sticky-bottom">
+    <div class="footer-main img-fluid">
+    <div class="social-icons img-fluid">
+        <ul>
+            <li><a href="#" target="blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" target="blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" target="blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#" target="blank"><i class="fa fa-youtube"></i></a></li>
+        </ul>
+        <p class="copyright">&copy 2020 Kawasaki Ninja Motorbike | All Rights Reserved.</p>
+    </div>
+    <div class="name">
+        <p>Designed by: Jastene Gail De Castro<a href="#"></a></p>
+    </div>
+    </div>
+</footer>
+</body>
+
+<script src="../js/main.js"></script>
+
+
+</script>
+</html>

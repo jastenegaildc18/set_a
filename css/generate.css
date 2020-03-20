@@ -1,0 +1,276 @@
+
+@font-face {
+    font-family:"Potra";
+    src: url(../fonts/Potra.ttf)
+}
+
+@font-face {
+    font-family:"Manrope";
+    src: url(../fonts/manrope-light.otf)
+}
+@font-face {
+    font-family:"Poppins";
+    src: url(../fonts/Poppins-Light.otf)
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    text-align: center;
+    background-image: url(../imgs/homebg.jpg);
+    cursor: auto;
+    font-family: 'Poppins';
+}
+.navbar{
+    padding: 10px;
+    background-color: #1ef329;
+    opacity: 80%;
+    position:relative;
+    text-align: right;
+    padding-left: 25%;
+}
+#logo{
+    width: 10%;
+    transition: 0.1s;
+}
+#logo:hover{
+    transform: scale(1.1);
+}
+
+.generate-button{
+    position: relative;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Manrope';
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: white;
+    border-radius: 40px;
+    background: rgba(17, 17, 17, 0.822);
+    color: #20af27;
+    border: 2px solid #20af27;
+    top: 19rem;
+    left: 22rem;
+    box-shadow: 0 3px 50px #20af27, 0 3px 20px 0 #20af27;
+    cursor: pointer;
+    transition:  2s;
+    display: flexbox;
+}
+.generate-button:hover{
+    box-shadow: 0 5px 50px #20af27, 0 5px 20px 0 #20af27 inset;
+    color: #77e073;
+}
+
+.button-reset{
+    position: relative;
+    margin-top: 3rem;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    background: rgba(17, 17, 17, 0.822);
+    color: #20af27;
+    border-radius: 40px;
+    border: 2px solid #20af27;
+    top: 18rem;
+    left: 22rem;
+    cursor: pointer;
+    transition:  1.5s;
+    display: flexbox;
+    box-shadow: 0 5px 50px #20af27, 0 3px 20px 0 #20af27;
+    transition: 2s;
+    font-family: 'Manrope';
+
+}
+.button-reset:hover{
+    box-shadow: 0 3px 50px #20af27, 0 5px 20px 0 #20af27 inset;
+    color: #77e073;
+
+}
+.motor-title{
+    color: white;
+    font-family: 'Potra';
+    font-size: 5rem;
+    padding: 2rem;
+    padding-top: 5rem;
+    animation: titleanimate 1.5s linear infinite;
+    transition-delay: 1s;
+    display: flexbox;
+}
+
+@keyframes titleanimate
+{
+    0%
+    {
+        text-shadow: none;
+        color: #000;
+   
+    }
+    40%, 100%
+    {
+        color: #fff;
+        text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #20af27,
+        0 0 70px #20af27,
+        0 0 80px #20af27,
+        0 0 100px #20af27;
+    }
+}
+
+.label2{
+    font-family: 'Manrope';
+    color: black;
+    font-size: 20px;
+    display: flexbox;
+}
+
+.motor{
+    width: 40rem;
+    position: absolute; 
+    top: 6rem; 
+    left: 2rem;
+    display: flex;
+    border-color: rgb(0, 0, 0) 1 px solid;
+    border-radius: 5%;
+}
+
+.color-box{
+    position: absolute;
+    top: 9rem;
+    left: 47rem;
+    padding: 5px;
+    background: #f1f1f1;
+    box-shadow: -3px -3px 7px #efffff73, 3px 3px 5px rgba(94, 104, 121, .288);
+}
+
+.color-box a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: left;
+    text-indent: -9999px;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: -3px -3px 7px #efffff73, 3px 3px 5px rgba(94, 104, 121, .288);
+    transition: 0.1s;
+}
+.color-box a:hover{
+    transform: scale(1.1);
+    position: relative;
+    box-shadow: inset -3px -3px 7px #efffff73, inset 3px 3px 5px rgba(94, 104, 121, .288);
+}
+
+#blue{
+    background: #0000ff;
+}
+#grey{
+    background: #808080;
+}
+#green{
+    background: #20af27;
+}
+#yellow{
+    background: #f1c40f;
+}
+#lightblue{
+    background: #add8e6;
+}
+#black{
+    background: #000000;
+}
+footer{
+    padding-top: 40%;
+    display: flex;
+}
+.footer-main{
+    width: 100%;
+    height: 50%;
+    background: rgba(17, 17, 17, 0.596);
+    padding: 20px 0px;
+}
+.social-icons{
+    width: 100%;
+    height: auto;
+}
+.social-icons li{
+    position: relative;
+    box-shadow: -3px -3px 7px rgb(170, 226, 175),  7px 7px 20px 0 rgba(94, 131, 97, 0.712);
+    transition: 0.2s;
+}
+.social-icons li:hover{
+    transform: scale(1.1);
+    color: rgba(59, 175, 24, 0.9);
+}
+
+.social-icons li:before:hover{
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: inset -3px -3px 7px rgb(170, 226, 175), inset  7px 7px 20px 0 rgba(94, 131, 97, 0.712);
+}
+.social-icons ul{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.social-icons li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px ;
+    border-radius: 100%;
+    background: #1ef329;
+}
+.social-icons ul li a{
+    font-size: 25px;
+    color: #111;
+}
+.social-icons ul li a:hover{
+    font-size: 25px ;
+    color: #023a04 ;
+}
+.social-icons ul li a i{
+    line-height: 50px;
+}
+.copyright{
+    padding: auto;
+    padding-top: 1%;
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: 'Manrope';
+}
+
+.name{
+    width: 100%;
+    margin:auto;
+    background: #1ef329;
+    opacity: 80%;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    padding-top: 1%;
+    position: absolute;
+    font-family: 'Manrope';
+}
+
+.fa-facebook:hover
+{
+    color: #0f235f;
+}
+.fa-twitter:hover{
+    color: #079aad;
+}
+.fa-instagram:hover{
+    color: #f023bc;
+}
+.fa-youtube:hover{
+    color: #8a0808;
+}
